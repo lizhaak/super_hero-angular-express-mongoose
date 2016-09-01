@@ -1,0 +1,22 @@
+{
+  "name": "superhero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "author": "lhaakens3@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-route": "^1.5.8",
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.13.3",
+    "mongoose": "^4.5.10",
+    "path": "^0.11.14",
+    "pg": "^6.1.0"
+  }
+}

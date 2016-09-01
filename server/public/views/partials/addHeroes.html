@@ -1,0 +1,24 @@
+<h1>Add a New Hero</h1>
+
+<section id="heroSubmission">
+  <h2>Submit a Hero</h2>
+  <form id ="heroForm">
+    <label for="alias">Alias:</label>
+    <input type="text" id="currentHeroAlias" name="alias" ng-model="newHero.alias" />
+
+    <label for="first_name">First Name:</label>
+    <input type="text" id="currentHeroFirstName" name="first_name" ng-model="newHero.first_name" />
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="currentHeroLastName" name="last_name" ng-model="newHero.last_name" />
+
+    <label for="city">City:</label>
+    <input type="text" id="currentHeroCity" name="city" ng-model="newHero.city" />
+
+    <select ng-model="selectedSuperPower" ng-change="selectAction()" ng-options="power.display for power in superPowers">
+        <option value="">Select a Super Power...</option>
+    </select>
+
+    <button class="submitHero" ng-click="submitNewHero()">Submit</button>
+  </form>
+</section>

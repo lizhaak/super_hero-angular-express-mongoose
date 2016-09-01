@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Superheroes</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <script type="text/javascript" src="/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="vendors/angular-route.min.js"></script>
+    <script type="text/javascript" src="/scripts/client_app.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/createHeroController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/displayHeroController.js"></script>
+  </head>
+
+  <body ng-app="heroApp">
+    <div ng-include="'/views/partials/nav.html'"></div>
+    <div ng-view></div>
+  </body>
+
+</html>
